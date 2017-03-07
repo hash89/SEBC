@@ -1,34 +1,27 @@
 # Tuning for YARN
 
 ## Recap
-_______________________________________________________________
+
 | n° | maper | reducer | container RAM | ratio | total time  |
 |----|-------|---------|---------------|-------|-------------|
 |  1 |     8 |       1 |           512 |   0.8 |        2m28 |
-|----|-------|---------|---------------|-------|-------------|
 |  2 |     8 |       1 |          1024 |   0.8 |        2m34 |
-|----|-------|---------|---------------|-------|-------------|
 |  3 |     8 |       1 |          2048 |   0.5 |        2m48 |
-|----|-------|---------|---------------|-------|-------------|
 |  4 |     8 |       1 |          2048 |   0.8 |        1m58 |
-|----|-------|---------|---------------|-------|-------------|
 |  5 |    24 |       8 |          1024 |   0.8 |        1m50 |
-|----|-------|---------|---------------|-------|-------------|
 |  6 |    24 |       8 |           512 |   0.8 |        1m51 |
-|----|-------|---------|---------------|-------|-------------|
 |  7 |     8 |       8 |          1024 |   0.8 |        1m48 |
-|----|-------|---------|---------------|-------|-------------|
 |  8 |     8 |       8 |           512 |   0.8 |        1m51 |
-|____|_______|_________|_______________|_______|_____________|
 
 
 ## Complete data
-1. Here is the output of the script with parameters as follow:
+### Here is the output of the script with parameters as follow:
   - 8 mapper
   - 1 reducer
   - Container mem 512 and 1024
   - Map heapsize ratio 0.8
   - Reduce heapsize ratio 0.8
+
 ```
 [hadrien@manager ~]$ ./YARNtest.sh
 Testing loop started on mar. mars 7 15:07:04 UTC 2017
@@ -57,12 +50,13 @@ Deleted /data/ts-10GB-8-1-1024
 Testing loop ended on mar. mars 7 15:12:14 UTC 2017
 ```
 
-2. Here is the output of the script with :
+### Here is the output of the script with :
   - 8 mapper
   - 1 reducer
   - Container mem 2048
   - Map heapsize ratio 0.5
   - Reduce heapsize ratio 0.5
+
 ```
 Testing loop started on mar. mars 7 15:17:20 UTC 2017
 Mapper 8 | Reducer 1 | container memory 2048 | MAP_MB 1024 | RED_MB 1024
@@ -79,12 +73,13 @@ Deleted /data/ts-10GB-8-1-2048
 Testing loop ended on mar. mars 7 15:20:13 UTC 2017
 ```
 
-3. Here is the output of the script with :
+### Here is the output of the script with :
   - 8 mapper
   - 1 reducer
   - Container mem 2048
   - Map heapsize ratio 0.8
   - Reduce heapsize ratio 0.8
+
 ```
 Testing loop started on mar. mars 7 15:27:50 UTC 2017
 Mapper 8 | Reducer 1 | container memory 2048 | MAP_MB 1638 | RED_MB 1638
@@ -100,12 +95,13 @@ Deleted /data/tg-10GB-8-1-2048
 Testing loop ended on mar. mars 7 15:29:51 UTC 2017
 ```
 
-4. Here is the output of the script with :
+### Here is the output of the script with :
   - 24 mapper
   - 8 reducer
   - Container mem 1024
   - Map heapsize ratio 0.8
   - Reduce heapsize ratio 0.8
+
 ```
 Testing loop started on mar. mars 7 15:30:37 UTC 2017
 Mapper 24 | Reducer 8 | container memory 1024 | MAP_MB 819 | RED_MB 819
@@ -121,12 +117,13 @@ Deleted /data/tg-10GB-24-8-1024
 Testing loop ended on mar. mars 7 15:32:30 UTC 2017
 ```
 
-5. Here is the output of the script with :
+### Here is the output of the script with :
   - 24 mapper
   - 8 reducer
   - Container mem 512
   - Map heapsize ratio 0.8
   - Reduce heapsize ratio 0.8
+
 ```
 Testing loop started on mar. mars 7 15:35:18 UTC 2017
 Mapper 24 | Reducer 8 | container memory 512 | MAP_MB 409 | RED_MB 409
@@ -142,12 +139,13 @@ Deleted /data/tg-10GB-24-8-512
 Testing loop ended on mar. mars 7 15:37:11 UTC 2017
 ```
 
-6. Here is the output of the script with :
+### Here is the output of the script with :
   - 8 mapper
   - 8 reducer
   - Container mem 1024
   - Map heapsize ratio 0.8
   - Reduce heapsize ratio 0.8
+
 ```
 Testing loop started on mar. mars 7 15:52:17 UTC 2017
 Mapper 8 | Reducer 8 | container memory 1024 | MAP_MB 819 | RED_MB 819
@@ -163,12 +161,13 @@ sys     0m0.345s
 Testing loop ended on mar. mars 7 15:54:08 UTC 2017
 ```
 
-7. Here is the output of the script with :
+### Here is the output of the script with :
   - 8 mapper
   - 8 reducer
   - Container mem 512
   - Map heapsize ratio 0.8
   - Reduce heapsize ratio 0.8
+
 ```
 Testing loop started on mar. mars 7 15:54:56 UTC 2017
 Mapper 8 | Reducer 8 | container memory 512 | MAP_MB 409 | RED_MB 409
