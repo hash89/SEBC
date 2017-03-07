@@ -21,4 +21,4 @@ Here is the outppu : `7/03/07 13:48:06 INFO fs.TrashPolicyDefault: Moved: 'hdfs:
 
 So the file move to trash. Now we can restore it via Cloudera Manager HDFS File Browser > Navigate to /data/precious > 'Restore Directory from snapshot'
 
-I choose thee first option. And the file come back ! 
+I choose thee first option. And the file come back !
