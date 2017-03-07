@@ -28,3 +28,5 @@ it start at 14:03:59 and end at 14:26:20 (approx. 23 min)
 
 ### Teravalidate
 Command: `hadoop jar /opt/cloudera/parcels/CDH-5.8.4-1.cdh5.8.4.p0.5/jars/hadoop-examples-2.6.0-mr1-cdh5.8.4.jar teravalidate terasort-output teravalidate-output`
+
+It start at 14:28:39 and end at 14:34:09 (approx. 6 min)
