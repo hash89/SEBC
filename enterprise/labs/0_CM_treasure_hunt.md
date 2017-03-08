@@ -12,7 +12,7 @@ This configuration can bbe found in the configuration page : Cloudera Manager > 
 
 ### *Which CDH service(s) host a property for enabling Kerberos authentication?*
 
-HDFS + Cloudera manager interface + Hue + Impala + Hive + Oozie
+All 
 
 ### *How do you upgrade the CM agents?*
 
