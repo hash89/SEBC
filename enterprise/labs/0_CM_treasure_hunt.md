@@ -29,6 +29,7 @@ There are services :
 1. HiveServer2
 2. Hive Metastore
 3. Hive gateway
+4. WebHCat server
 
 
 ### *What steps must be completed before integrating Cloudera Manager with Kerberos?*
