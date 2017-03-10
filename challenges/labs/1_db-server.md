@@ -2,6 +2,7 @@
 
 ## Db host
 manager
+*During my challenge, Manager is my Master of the cluster and my master host is the Cloudera manager. Due to the hosts list in 0_setup.md*
 
 ## Version
 Command : `mysql --version`
